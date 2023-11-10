@@ -58,7 +58,7 @@ const Resume = () => {
   const [educationToggle, setEducationToggle] = useState(1);
   const [experienceToggle, setExperienceToggle] = useState(1);
   return (
-    <section className="lui-section lui-gradient-bottom" id="resume-section">
+    <section className="lui-section lui-gradient-top" id="resume-section">
       {/* Heading */}
       <div className="lui-heading">
         <div className="container">
