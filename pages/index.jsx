@@ -12,15 +12,6 @@ const PortfolioIsotope = dynamic(
 const Index = () => {
   return (
     <Layout pageClassName={"home"}>
-      <div>
-        <h1>Fix todo lise</h1>
-        <ul>
-          <li>replace info</li>
-          <li>add function: 1. read cv. 2. send contact msg to my email. </li>
-          <li>make thumbnail for portfolio projects</li>
-          <li>add More About Me paragraph or section.</li>
-        </ul>
-      </div>
       {/* Section - Hero Started */}
       <section
         className="lui-section lui-section-hero lui-gradient-top"

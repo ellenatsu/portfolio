@@ -1,6 +1,9 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { Fragment, useEffect, useRef, useState } from "react";
+import { projectsData } from "../../public/assets/data/data";
+
+import ProjectCard from "./ProjectCard";
 const PortfolioIsotope = ({ noViewMore }) => {
   // Isotope
   const isotope = useRef();
@@ -8,7 +11,6 @@ const PortfolioIsotope = ({ noViewMore }) => {
   useEffect(() => {
     isotope.current = new Isotope(".works-items", {
       itemSelector: ".works-col",
-      //    layoutMode: "fitRows",
       percentPosition: true,
       masonry: {
         columnWidth: ".works-col",
@@ -47,68 +49,32 @@ const PortfolioIsotope = ({ noViewMore }) => {
             All
           </a>
           <a
-            className={`c-pointer lui-subtitle ${activeBtn(
-              "sorting-ui-ux-design"
-            )}`}
-            onClick={handleFilterKeyChange("sorting-ui-ux-design")}
-            data-href=".sorting-ui-ux-design"
+            className={`c-pointer lui-subtitle ${activeBtn("nextjs")}`}
+            onClick={handleFilterKeyChange("nextjs")}
+            data-href=".nextjs"
           >
             NextJS
           </a>
           <a
-            className={`c-pointer lui-subtitle ${activeBtn("sorting-photo")}`}
-            onClick={handleFilterKeyChange("sorting-photo")}
-            data-href=".sorting-photo"
+            className={`c-pointer lui-subtitle ${activeBtn("react")}`}
+            onClick={handleFilterKeyChange("react")}
+            data-href=".react"
           >
             React
           </a>
         </div>
         <div className="works-items works-masonry-items row">
-          <div className="works-col col-xs-12 col-sm-12 col-md-12 col-lg-12 sorting-branding sorting-photo ">
-            <div
-              className="works-item scrolla-element-anim-1 scroll-animate"
-              data-animate="active"
-            >
-              <div className="image">
-                <div className="img">
-                  <Link legacyBehavior href="/work-single">
-                    <a>
-                      <img
-                        decoding="async"
-                        src="assets/images/work4.jpeg"
-                        alt="Zorro"
-                      />
-                      <span className="overlay" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-              <div className="desc">
-                <span className="category"> Branding, Photography </span>
-                <h5 className="name">
-                  <Link legacyBehavior href="/work-single">
-                    <a>Zorro</a>
-                  </Link>
-                </h5>
-                <div className="text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-                <Link legacyBehavior href="/work-single">
-                  <a className="lnk">See project</a>
-                </Link>
-              </div>
-              <div
-                className="bg-img"
-                style={{
-                  backgroundImage: "url(assets/images/pat-2.png)",
-                }}
-              />
-            </div>
-          </div>
+          {projectsData.map((project, index) => (
+            <ProjectCard
+              key={index}
+              topicName={project.topicName}
+              topicDescription={project.topicDescription}
+              categories={project.categories}
+              projectLink={project.projectLink}
+            />
+          ))}
         </div>
+
         {!noViewMore && (
           <div className="load-more-link">
             <Link legacyBehavior href="/works">
