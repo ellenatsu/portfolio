@@ -10,13 +10,10 @@ const Footer = () => {
                 data-animate="active"
               >
                 <a target="_blank" rel="nofollow" href="http://twitter.com">
-                  <i aria-hidden="true" className="fab fa-twitter" />
+                  <i aria-hidden="true" className="fab fa-github" />
                 </a>
                 <a target="_blank" rel="nofollow" href="http://dribble.com">
-                  <i aria-hidden="true" className="fab fa-dribbble" />
-                </a>
-                <a target="_blank" rel="nofollow" href="http://behance.com">
-                  <i aria-hidden="true" className="fab fa-behance" />
+                  <i aria-hidden="true" className="fab fa-linkedin" />
                 </a>
               </div>
             </div>
@@ -25,16 +22,10 @@ const Footer = () => {
                 className="copyright-text align-center scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                © 2022 <strong>Luique</strong>. All rights reserved
+                © 2024 <strong>ELLEN WANG</strong>.
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <div
-                className="copyright-text align-right scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                Developed by <strong>bslthemes</strong>
-              </div>
             </div>
           </div>
         </div>

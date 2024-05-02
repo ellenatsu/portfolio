@@ -49,15 +49,14 @@ const Index = () => {
                 <div className="description">
                   <div>
                     <p>
-                      From Vancouver, Canada. I have rich experience in full
-                      stack web development, also I am good at wordpress.
+                      From Vancouver, Canada. I have rich experience in Full Stack Web Development and Mobile App Development.
                     </p>
                   </div>
                   <div className="social-links">
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href={personalInfo.githubUrl}>
                       <i aria-hidden="true" className="fab fa-github" />
                     </a>
-                    <a target="_blank" rel="nofollow" href="#">
+                    <a target="_blank" rel="nofollow" href={personalInfo.linkedinUrl}>
                       <i aria-hidden="true" className="fab fa-linkedin" />
                     </a>
                   </div>
@@ -68,7 +67,7 @@ const Index = () => {
                     href="https://drive.google.com/"
                     className="btn"
                   >
-                    <span>Open CV</span>
+                    <span>Download Resume</span>
                   </a>
                   <a href="#skills-section" className="btn-lnk">
                     {" "}
@@ -82,7 +81,7 @@ const Index = () => {
               >
                 <img
                   decoding="async"
-                  src="assets/images/profile2.png"
+                  src="assets/newImages/selfie-1.png"
                   alt="<b>Ellen</b> Wang"
                 />
                 <span className="circle circle-1" />
@@ -124,7 +123,7 @@ const Index = () => {
                 data-splitting="words"
                 data-animate="active"
               >
-                <span> Portfolio </span>
+                <span> Works </span>
               </h2>
               <div
                 className="m-subtitle splitting-text-anim-1 scroll-animate"
@@ -141,7 +140,7 @@ const Index = () => {
           <div className="container">
             <PortfolioIsotope />
             <div className="lui-bgtitle">
-              <span> Portfolio </span>
+              <span> works </span>
             </div>
           </div>
         </div>

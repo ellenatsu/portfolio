@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { linkClick, toggleMenu } from "../utils";
+import { personalInfo } from "../../public/assets/data/data";
 
 const Header = () => {
   const [day, setDay] = useState(true);
@@ -29,7 +30,8 @@ const Header = () => {
                     <img
                       width={228}
                       height={38}
-                      src="assets/images/logo2.png"
+                      src="assets/newImages/cat-1.png"
+                      transparent="true"
                       alt=""
                     />
                   </a>
@@ -107,10 +109,10 @@ const Header = () => {
                               <a
                                 className="splitting-text-anim-2"
                                 data-splitting="chars"
-                                href="/#services-section"
+                                href="/#works-section"
                                 onClick={() => linkClick()}
                               >
-                                Services
+                                Works
                               </a>
                             </li>
                             <li className="menu-item">
@@ -123,16 +125,7 @@ const Header = () => {
                                 Skills
                               </a>
                             </li>
-                            <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#works-section"
-                                onClick={() => linkClick()}
-                              >
-                                Works
-                              </a>
-                            </li>
+                            
                             <li className="menu-item">
                               <a
                                 className="splitting-text-anim-2"
@@ -142,37 +135,7 @@ const Header = () => {
                               >
                                 Resume
                               </a>
-                            </li>
-                            <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#testimonials-sec
-                                onClick={() => linkClick()}tion"
-                              >
-                                Testimonials
-                              </a>
-                            </li>
-                            <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#pricing-section"
-                                onClick={() => linkClick()}
-                              >
-                                Pricing
-                              </a>
-                            </li>
-                            <li className="menu-item">
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                href="/#blog-section"
-                                onClick={() => linkClick()}
-                              >
-                                Blog
-                              </a>
-                            </li>
+                            </li>                                                                   
                             <li className="menu-item">
                               <a
                                 className="splitting-text-anim-2"
@@ -180,110 +143,33 @@ const Header = () => {
                                 href="/#contact-section"
                                 onClick={() => linkClick()}
                               >
-                                Contact
+                                More About Me
                               </a>
                             </li>
-                            <li
-                              className={`menu-item menu-item-has-children has-children ${
-                                pageToggle ? "opened" : "closed"
-                              }`}
-                            >
-                              <a
-                                className="splitting-text-anim-2"
-                                data-splitting="chars"
-                                onClick={() => setPageToggle(!pageToggle)}
-                              >
-                                Pages
-                                <i className="fas fa-chevron-down"></i>
-                              </a>
-
-                              <ul
-                                className="sub-menu"
-                                style={{
-                                  marginTop: "1rem",
-                                  display: `${pageToggle ? "block" : "none"}`,
-                                }}
-                              >
-                                <li className="menu-item">
-                                  <Link legacyBehavior href="/works-list">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
-                                      Works (List)
-                                    </a>
-                                  </Link>
-                                </li>
-                                <li className="menu-item">
-                                  <Link legacyBehavior href="/works">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
-                                      Works (Grid)
-                                    </a>
-                                  </Link>
-                                </li>
-                                <li className="menu-item">
-                                  <Link legacyBehavior href="/work-single">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
-                                      Work Single Page
-                                    </a>
-                                  </Link>
-                                </li>
-                                <li className="menu-item">
-                                  <Link legacyBehavior href="/blog">
-                                    <a
-                                      className=" splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
-                                      Blog
-                                    </a>
-                                  </Link>
-                                </li>
-                                <li className="menu-item">
-                                  <Link legacyBehavior href="/blog-single">
-                                    <a
-                                      className="splitting-text-anim-1"
-                                      data-splitting="chars"
-                                    >
-                                      Single Post
-                                    </a>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
+                            
+                             
+                    
                           </ul>
                         </div>
                         {/* social */}
                         <div className="menu-social-links">
                           <a
-                            href="http://dribbble.com"
+                            href={personalInfo.githubUrl}
                             target="blank"
                             className="scrolla-element-anim-1"
                             title="dribbble"
                           >
-                            <i className="fab fa-dribbble" />
+                            <i className="fab fa-github" />
                           </a>
                           <a
-                            href="http://twitter.com"
+                            href={personalInfo.linkedinUrl}
                             target="blank"
                             className="scrolla-element-anim-1"
                             title="twitter"
                           >
-                            <i className="fab fa-twitter" />
+                            <i className="fab fa-linkedin" />
                           </a>
-                          <a
-                            href="http://behance.com"
-                            target="blank"
-                            className="scrolla-element-anim-1"
-                            title="behance"
-                          >
-                            <i className="fab fa-behance" />
-                          </a>
+                          
                         </div>
                         <div className="v-line-block">
                           <span />

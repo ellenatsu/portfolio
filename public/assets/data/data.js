@@ -2,11 +2,11 @@ export const personalInfo = {
   name: "Ellen Wang",
   title: "Web Developer",
   email: "hidefornow",
-  phone: "2365120898",
+  phone: "7787927269",
   address: "Kerrisdale, Vancouver, BC",
   website: "",
-  githubUrl: "",
-  linkedinUrl: "",
+  githubUrl: "https://github.com/ellenatsu",
+  linkedinUrl: "https://www.linkedin.com/in/ellen-zhixuan-wang-79ba97170/?trk=opento_sprofile_topcard",
   cvUrl: "",
 };
 
