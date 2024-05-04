@@ -10,6 +10,7 @@ import Link from "next/link";
 
 const ProjectCard = ({
   topicName,
+  topicCover,
   topicDescription,
   categories,
   projectLink,
@@ -27,8 +28,8 @@ const ProjectCard = ({
               <a>
                 <img
                   decoding="async"
-                  src="assets/images/work4.jpeg"
-                  alt="Zorro"
+                  src={topicCover}
+                  alt="cover"
                 />
                 <span className="overlay" />
               </a>

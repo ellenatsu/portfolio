@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Resume from "../src/components/Resume";
 import Layout from "../src/layouts/Layout";
-import { personalInfo } from "../public/assets/data/data";
+import { aboutMeData, personalInfo } from "../public/assets/data/data";
 
 const PortfolioIsotope = dynamic(
   () => import("../src/components/PortfolioIsotope"),
@@ -183,14 +183,12 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span> PHP </span>
+                      <span> FrontEnd </span>
                     </h6>
                     <div className="text">
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          React, HTML, CSS, JavaScript, Bootstrap, Tailwind...
                         </p>
                       </div>
                     </div>
@@ -210,25 +208,23 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span> Python </span>
+                      <span> Javascript </span>
                     </h6>
                     <div className="text">
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          
                         </p>
                       </div>
                     </div>
                     <div className="dots">
-                      <div className="dot" style={{ width: "75%" }}>
+                      <div className="dot" style={{ width: "90%" }}>
                         <span />
                       </div>
                     </div>
                     <div className="value">
                       <span className="num">
-                        75 <span>%</span>
+                        90 <span>%</span>
                       </span>
                     </div>
                   </div>
@@ -241,14 +237,12 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span> JavaScript </span>
+                      <span> BackEnd </span>
                     </h6>
                     <div className="text">
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          Node.js, Express, MySQL, MongoDB, Firebase, RESTful API, GraphQL, PHP...
                         </p>
                       </div>
                     </div>
@@ -268,14 +262,12 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span> React </span>
+                      <span> Python </span>
                     </h6>
                     <div className="text">
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                    
                         </p>
                       </div>
                     </div>
@@ -299,25 +291,23 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span> WordPress </span>
+                      <span> Mobile App </span>
                     </h6>
                     <div className="text">
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          Android, Flutter, Kotlin...
                         </p>
                       </div>
                     </div>
                     <div className="dots">
-                      <div className="dot" style={{ width: "90%" }}>
+                      <div className="dot" style={{ width: "70%" }}>
                         <span />
                       </div>
                     </div>
                     <div className="value">
                       <span className="num">
-                        90 <span>%</span>
+                        70 <span>%</span>
                       </span>
                     </div>
                   </div>
@@ -326,25 +316,23 @@ const Index = () => {
                     data-animate="active"
                   >
                     <h6 className="name">
-                      <span> Adobe XD </span>
+                      <span> Java </span>
                     </h6>
                     <div className="text">
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua.
+                          
                         </p>
                       </div>
                     </div>
                     <div className="dots">
-                      <div className="dot" style={{ width: "80%" }}>
+                      <div className="dot" style={{ width: "70%" }}>
                         <span />
                       </div>
                     </div>
                     <div className="value">
                       <span className="num">
-                        80 <span>%</span>
+                        70 <span>%</span>
                       </span>
                     </div>
                   </div>
@@ -361,7 +349,7 @@ const Index = () => {
       {/* Section - Resume */}
       <Resume />
 
-      {/* Section - Contacts */}
+      {/* Section - About me detail */}
       <section className="lui-section lui-gradient-bottom" id="contact-section">
         {/* Heading */}
         <div className="lui-heading">
@@ -372,7 +360,7 @@ const Index = () => {
                 data-splitting="words"
                 data-animate="active"
               >
-                <span> Contact Me </span>
+                <span>More About Me </span>
               </h2>
               <div
                 className="m-subtitle splitting-text-anim-1 scroll-animate"
@@ -381,8 +369,7 @@ const Index = () => {
               >
                 <span>
                   {" "}
-                  Let’s <b>Talk About Ideas</b>
-                </span>
+                  My life and passion</span>
               </div>
             </div>
           </div>
@@ -390,136 +377,14 @@ const Index = () => {
         {/* Contact */}
         <div className="lui-contacts v-line v-line-left">
           <div className="container">
-            <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div className="numbers-items">
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-map" />
-                    </div>
-                    <div className="title">
-                      <span> Address </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> {personalInfo.address} </span>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-user" />
-                    </div>
-                    <div className="title">
-                      <span> {personalInfo.title} </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> Look for a job start from Feb 2024 </span>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-envelope" />
-                    </div>
-                    <div className="title">
-                      <span> Email </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> {personalInfo.email} </span>
-                    </div>
-                  </div>
-                  <div
-                    className="numbers-item scrolla-element-anim-1 scroll-animate"
-                    data-animate="active"
-                  >
-                    <div className="icon">
-                      <i aria-hidden="true" className="far fa-address-book" />
-                    </div>
-                    <div className="title">
-                      <span> Phone </span>
-                    </div>
-                    <div className="lui-text">
-                      <span> {personalInfo.phone} </span>
-                    </div>
-                  </div>
+            {aboutMeData.map((aboutMe) => (
+                <div className="liu-text h5">
+                  {aboutMe}
+                  <br />
                 </div>
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <div
-                  className="contacts-form scrolla-element-anim-1 scroll-animate"
-                  data-animate="active"
-                >
-                  <div
-                    className="bg-img"
-                    style={{
-                      backgroundImage: "url(assets/images/pat-1.png)",
-                    }}
-                  />
-                  <div className="contacts-form">
-                    <form onSubmit={(e) => e.preventDefault()} id="cform">
-                      <div className="row">
-                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                          <div className="group">
-                            <label>
-                              Your Full Name <b>*</b>
-                              <input type="text" name="name" />
-                            </label>
-                          </div>
-                        </div>
-                        <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                          <div className="group">
-                            <label>
-                              Your Email Address <b>*</b>
-                              <input type="email" name="email" />
-                            </label>
-                          </div>
-                        </div>
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                          <div className="group">
-                            <label>
-                              Your Subject <b>*</b>
-                              <input type="text" name="subject" />
-                            </label>
-                          </div>
-                        </div>
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                          <div className="group">
-                            <label>
-                              Your Message <b>*</b>
-                              <textarea name="message" defaultValue={""} />
-                            </label>
-                          </div>
-                        </div>
-                        <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 align-right">
-                          <div className="terms-label">
-                            * Accept the terms and conditions.
-                          </div>
-                          <a
-                            href="#"
-                            className="btn"
-                            onclick="$('#cform').submit(); return false;"
-                          >
-                            <span>Send Message</span>
-                          </a>
-                        </div>
-                      </div>
-                    </form>
-                    <div className="alert-success" style={{ display: "none" }}>
-                      <p>Thanks, your message is sent successfully.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}           
             <div className="lui-bgtitle">
-              <span> Contact Me </span>
+              <span> About Me </span>
             </div>
           </div>
         </div>

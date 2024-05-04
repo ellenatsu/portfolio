@@ -37,7 +37,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
   return (
     <Fragment>
       <div className="works-box">
-        <div
+        {/* <div
           className="filter-links scrolla-element-anim-1 scroll-animate"
           data-animate="active"
         >
@@ -62,12 +62,13 @@ const PortfolioIsotope = ({ noViewMore }) => {
           >
             React
           </a>
-        </div>
+        </div> */}
         <div className="works-items works-masonry-items row">
           {projectsData.map((project, index) => (
             <ProjectCard
               key={index}
               topicName={project.topicName}
+              topicCover={project.topicCover}
               topicDescription={project.topicDescription}
               categories={project.categories}
               projectLink={project.projectLink}
@@ -75,7 +76,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
           ))}
         </div>
 
-        {!noViewMore && (
+        {/* {!noViewMore && (
           <div className="load-more-link">
             <Link legacyBehavior href="/works">
               <a
@@ -86,7 +87,7 @@ const PortfolioIsotope = ({ noViewMore }) => {
               </a>
             </Link>
           </div>
-        )}
+        )} */}
       </div>
     </Fragment>
   );
