@@ -13,22 +13,22 @@ export const personalInfo = {
 export const projectsData = [
   {
     topicName: "Discord Clone",
-    topicCover:"assets/covers/ecom-admin-cover.png",
+    topicCover:"assets/covers/discord.png",
     topicDescription: "Test account: username: test, password: test  Click to join a test server! ",
-    categories: ["Nextjs"],
+    categories: ["React", "Nextjs", "MySQL"],
     projectLink: "https://discordclone-production-5067.up.railway.app/invite/ef81ac81-8495-401c-89a6-21d931f5ffd5",
   },
   {
     topicName: "Ecommerce Admin Dashboard",
-    topicCover:"assets/covers/ecom-admin-cover.png",
+    topicCover:"assets/covers/ecom-admin.png",
     topicDescription:
       "Test account: username: test, password: test",
-    categories: ["Nextjs"],
+    categories: ["React", "Nextjs", "MySQL"],
     projectLink: "https://ecom-dashboard-demo.vercel.app/",
   },
   {
     topicName: "Ecommerce Front Store ",
-    topicCover:"assets/covers/ecom-admin-cover.png",
+    topicCover:"assets/covers/ECOM-store.png",
     topicDescription:
       "Front store demo for the test account.",
     categories: ["React", "Nextjs", "MySQL"],
@@ -36,22 +36,22 @@ export const projectsData = [
   },
   {
     topicName: "Dribble Clone",
-    topicCover:"assets/covers/ecom-admin-cover.png",
-    topicDescription: "Under Maintenance! Upgrading to latest grafbase...",
+    topicCover:"assets/covers/maintenance.jpg",
+    topicDescription: "Sorry! Under Maintenance! Upgrading to latest grafbase sdk...",
     categories: ["Nextjs", "GraphQL"],
     projectLink: "#",
   },
   {
     topicName: "Face Detect App",
-    topicCover:"assets/covers/ecom-admin-cover.png",
-    topicDescription: "face detect app  !! still need deploy!",
-    categories: ["React", "AI"],
-    projectLink: "#",
+    topicCover:"assets/covers/face.png",
+    topicDescription: "Account: test, password: test. Try it out with a human face image link!",
+    categories: ["React", "AI", "postgreSQL"],
+    projectLink: "https://facedetect-web.vercel.app/",
   },
   {
     topicName: "Pokemon Pokedex",
-    topicCover: "assets/covers/ecom-admin-cover.png",
-    topicDescription: "A simple Pokemon display/search/filter ",
+    topicCover: "assets/covers/poke.png",
+    topicDescription: "A simple Pokemon display/search/filter app",
     categories: ["Nextjs", "React"],
     projectLink: "https://pokedex-demo-sandy.vercel.app/",
   },

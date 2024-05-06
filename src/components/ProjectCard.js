@@ -24,7 +24,7 @@ const ProjectCard = ({
       >
         <div className="image">
           <div className="img">
-            <Link legacyBehavior href="/work-single">
+            {/* <Link legacyBehavior href="/work-single">
               <a>
                 <img
                   decoding="async"
@@ -33,22 +33,30 @@ const ProjectCard = ({
                 />
                 <span className="overlay" />
               </a>
-            </Link>
+            </Link> */}
+            <a>
+              <img
+                decoding="async"
+                src={topicCover}
+                alt="cover"
+              />
+              <span className="overlay" />
+            </a>
           </div>
         </div>
         <div className="desc">
           <span className="category">{category}</span>
           <h5 className="name">
-            <Link legacyBehavior href="/work-single">
-              <a>{topicName}</a>
-            </Link>
+
+            <a>{topicName}</a>
+
           </h5>
           <div className="text">
             <p>{topicDescription}</p>
           </div>
           <Link legacyBehavior href={projectLink} passHref>
             <a className="lnk" target="_blank" rel="noopener noreferrer">
-              See project
+              Go Website
             </a>
           </Link>
         </div>
