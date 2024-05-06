@@ -1,23 +1,26 @@
-name: Generate a build and push to another branch
+name: Generate a build and push to build branch
 
 on:
   push:
     branches:
-      - main # The branch name your are commit the new changes
+      - main  # Set this to the branch you want to build from
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build and Push
+
     steps:
-      - name: git-checkout
-        uses: actions/checkout@v3
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'  # Set this to the node version you use
 
-      - name: Install all dependencies
-        run: npm install
+    - name: Install Dependencies
+      run: npm install
 
-      - name: Build
-        run: npm run build # The build command of your project
+    - name: Build
+      run: next build
 
       - name: Push
         uses: s0/git-publish-subdir-action@develop
