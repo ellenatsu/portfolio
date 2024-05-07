@@ -19,7 +19,7 @@ export const projectsData = [
     projectLink: "https://discordclone-production-5067.up.railway.app/invite/ef81ac81-8495-401c-89a6-21d931f5ffd5",
   },
   {
-    topicName: "Ecommerce Admin Dashboard",
+    topicName: "Ecommerce Dashboard",
     topicCover:"assets/covers/ecom-admin.png",
     topicDescription:
       "Test account: username: test, password: test",
@@ -27,7 +27,7 @@ export const projectsData = [
     projectLink: "https://ecom-dashboard-demo.vercel.app/",
   },
   {
-    topicName: "Ecommerce Front Store ",
+    topicName: "Ecommerce Store ",
     topicCover:"assets/covers/ECOM-store.png",
     topicDescription:
       "Front store demo for the test account.",

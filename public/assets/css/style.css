@@ -2410,16 +2410,19 @@ hr {
 
 .section.hero-started {
 	position: relative;
+	zoom: 0.9;
+	margin: 6vh 10vh 0;
 }
 
 .section.hero-started .slide {
-	margin-top: -390px;
+	margin-top: -330px;
 	position: absolute;
 	top: 50%;
-	right: -20px;
+	right: 0px;
 	width: 680px;
 	height: 800px;
 	z-index: 2;
+	zoom: 0.8;
 }
 
 .elementor-editor-active .section.hero-started .slide {
