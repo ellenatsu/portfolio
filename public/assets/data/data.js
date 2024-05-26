@@ -14,7 +14,7 @@ export const projectsData = [
   {
     topicName: "Discord Clone",
     topicCover:"assets/covers/discord.png",
-    topicDescription: "Test account: username: test, password: test  Click to join a test server! ",
+    topicDescription: "Test account: user: test@example.com, password: test  Click to join a test server! ",
     categories: ["React", "Nextjs", "MySQL"],
     projectLink: "https://discordclone-production-5067.up.railway.app/invite/ef81ac81-8495-401c-89a6-21d931f5ffd5",
   },
