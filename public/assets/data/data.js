@@ -16,7 +16,7 @@ export const projectsData = [
     topicCover:"assets/covers/discord.png",
     topicDescription: "Test account: user: test@example.com, password: test  Click to join a test server! ",
     categories: ["React", "Nextjs", "MySQL"],
-    projectLink: "https://discordclone-production-5067.up.railway.app/invite/ef81ac81-8495-401c-89a6-21d931f5ffd5",
+    projectLink: "https://discordclone-production-5067.up.railway.app/invite/21f1317c-a233-477e-91e5-2b676545ad1e",
   },
   {
     topicName: "Ecommerce Dashboard",
@@ -35,13 +35,6 @@ export const projectsData = [
     projectLink: "https://ecom-store-demo-ashen.vercel.app/",
   },
   {
-    topicName: "Dribble Clone",
-    topicCover:"assets/covers/maintenance.jpg",
-    topicDescription: "Sorry! Under Maintenance! Upgrading to latest grafbase sdk...",
-    categories: ["Nextjs", "GraphQL"],
-    projectLink: "#",
-  },
-  {
     topicName: "Face Detect App",
     topicCover:"assets/covers/face.png",
     topicDescription: "Account: test, password: test. Try it out with a human face image link! (https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Human_faces.jpg/375px-Human_faces.jpg)",
@@ -54,6 +47,13 @@ export const projectsData = [
     topicDescription: "A simple Pokemon display/search/filter app",
     categories: ["Nextjs", "React"],
     projectLink: "https://pokedex-demo-sandy.vercel.app/",
+  },
+  {
+    topicName: "Dribble Clone",
+    topicCover:"assets/covers/maintenance.jpg",
+    topicDescription: "Sorry! Under Maintenance!",
+    categories: ["Nextjs", "GraphQL"],
+    projectLink: "#",
   },
 ];
 
