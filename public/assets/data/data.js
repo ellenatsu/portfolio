@@ -35,13 +35,6 @@ export const projectsData = [
     projectLink: "https://ecom-store-demo-ashen.vercel.app/",
   },
   {
-    topicName: "Face Detect App",
-    topicCover:"assets/covers/face.png",
-    topicDescription: "Account: test, password: test. Try it out with a human face image link! (https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Human_faces.jpg/375px-Human_faces.jpg)",
-    categories: ["React", "AI", "postgreSQL"],
-    projectLink: "https://facedetect-web.vercel.app/",
-  },
-  {
     topicName: "Pokemon Pokedex",
     topicCover: "assets/covers/poke.png",
     topicDescription: "A simple Pokemon display/search/filter app",
