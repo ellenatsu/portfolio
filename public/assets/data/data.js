@@ -35,6 +35,13 @@ export const projectsData = [
     projectLink: "https://ecom-store-demo-ashen.vercel.app/",
   },
   {
+    topicName: "English Learning App",
+    topicCover:"assets/covers/home.jpg",
+    topicDescription: "Learn English, practice words and display textbooks.",
+    categories: ["React Native", "firebase"],
+    projectLink: "https://github.com/ellenatsu/react-native-learnenglish-app",
+  },
+  {
     topicName: "Pokemon Pokedex",
     topicCover: "assets/covers/poke.png",
     topicDescription: "A simple Pokemon display/search/filter app",
