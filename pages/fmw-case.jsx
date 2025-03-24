@@ -6,7 +6,8 @@ import Layout from "../src/layouts/Layout";
 const WorkSingle = () => {
   const [videoToggle, setVideoToggle] = useState(false);
   return (
-    <Layout pageClassName={"portfolio-template"} className="p-6">
+    <Layout pageClassName={"portfolio-template"}>
+      <div className="flex flex-col gap-0 p-6">
       {/* Section Started Heading */}
       <section className="section section-inner started-heading">
         {/* Heading */}
@@ -266,6 +267,7 @@ const WorkSingle = () => {
             </Link>
           </div>
         </div>
+      </div>
       </div>
     </Layout>
   );
