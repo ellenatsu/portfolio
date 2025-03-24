@@ -26,7 +26,7 @@ const Index = () => {
                 data-animate="active"
               >
                 <div className="titles">
-                  <div className="lui-subtitle">
+                  <div className="lui-subtitle pt-5">
                     <span>
                       {" "}
                       Hello, <b>my name is</b>
