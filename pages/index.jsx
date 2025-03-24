@@ -49,14 +49,23 @@ const Index = () => {
                 <div className="description">
                   <div>
                     <p>
-                      From Vancouver, Canada. I have rich experience in Full Stack Web Development and Mobile App Development.
+                      From Vancouver, Canada. I have rich experience in Full
+                      Stack Web Development and Mobile App Development.
                     </p>
                   </div>
                   <div className="social-links">
-                    <a target="_blank" rel="nofollow" href={personalInfo.githubUrl}>
+                    <a
+                      target="_blank"
+                      rel="nofollow"
+                      href={personalInfo.githubUrl}
+                    >
                       <i aria-hidden="true" className="fab fa-github" />
                     </a>
-                    <a target="_blank" rel="nofollow" href={personalInfo.linkedinUrl}>
+                    <a
+                      target="_blank"
+                      rel="nofollow"
+                      href={personalInfo.linkedinUrl}
+                    >
                       <i aria-hidden="true" className="fab fa-linkedin" />
                     </a>
                   </div>
@@ -64,10 +73,10 @@ const Index = () => {
                 <div className="bts">
                   <a
                     target="_blank"
-                    href="https://drive.google.com/file/d/1r4wcTZrUWfmQWQn2EUoPRc1DlU0hi9Sp/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1MtQuIUhe8rpVICyyLF-ZlST6zMr8RrYc/view?usp=sharing"
                     className="btn"
                   >
-                    <span>Download Resume</span>
+                    <span>Check Resume</span>
                   </a>
                   <a href="#skills-section" className="btn-lnk">
                     {" "}
@@ -81,7 +90,7 @@ const Index = () => {
               >
                 <img
                   decoding="async"
-                  src="assets/newImages/selfie-1.png"
+                  src="assets/newImages/anime-selfie.png"
                   alt="<b>Ellen</b> Wang"
                 />
                 <span className="circle circle-1" />
@@ -130,7 +139,7 @@ const Index = () => {
                 data-splitting="words"
                 data-animate="active"
               >
-                <span>live Website Demos</span>
+                <span>Startup project, website, apps</span>
               </div>
             </div>
           </div>
@@ -212,9 +221,7 @@ const Index = () => {
                     </h6>
                     <div className="text">
                       <div>
-                        <p>
-                          
-                        </p>
+                        <p></p>
                       </div>
                     </div>
                     <div className="dots">
@@ -242,7 +249,8 @@ const Index = () => {
                     <div className="text">
                       <div>
                         <p>
-                          Node.js, Express, MySQL, MongoDB, Firebase, RESTful API, GraphQL, PHP...
+                          Node.js, Express, MySQL, MongoDB, Firebase, RESTful
+                          API, GraphQL, PHP...
                         </p>
                       </div>
                     </div>
@@ -266,9 +274,7 @@ const Index = () => {
                     </h6>
                     <div className="text">
                       <div>
-                        <p>
-                    
-                        </p>
+                        <p></p>
                       </div>
                     </div>
                     <div className="dots">
@@ -295,9 +301,7 @@ const Index = () => {
                     </h6>
                     <div className="text">
                       <div>
-                        <p>
-                          Android, Flutter, Kotlin...
-                        </p>
+                        <p>React Native, Android, Flutter</p>
                       </div>
                     </div>
                     <div className="dots">
@@ -320,9 +324,7 @@ const Index = () => {
                     </h6>
                     <div className="text">
                       <div>
-                        <p>
-                          
-                        </p>
+                        <p></p>
                       </div>
                     </div>
                     <div className="dots">
@@ -367,22 +369,41 @@ const Index = () => {
                 data-splitting="words"
                 data-animate="active"
               >
-                <span>
-                  {" "}
-                  My life and passion</span>
+                <span> My life and passion</span>
               </div>
             </div>
           </div>
         </div>
-        {/* Contact */}
         <div className="lui-contacts v-line v-line-left">
           <div className="container">
-            {aboutMeData.map((aboutMe) => (
-                <div className="liu-text h5">
-                  {aboutMe}
-                  <br />
-                </div>
-            ))}           
+              <div className="liu-text h5">
+                <p>
+                  Hi, I'm Ellen — a full-stack web and app developer with a
+                  background in Android development and a growing focus on
+                  modern web technologies.
+                </p>
+                <p>
+                  Over the past two years, I've built a variety of projects
+                  including an AI-powered web chatbot and ecommerce store demo.
+                </p>
+                <p>
+                  I recently led a 6-month solo developer role at a startup,
+                  designing and building an end-to-end cashback gift registry
+                  platform using React, Node.js, and PostgreSQL.
+                </p>
+                <p>
+                  What drives me is the challenge of problem-solving and the
+                  excitement of building intuitive digital experiences. I enjoy
+                  merging design with functionality and adapting quickly to new
+                  technologies and workflows.
+                </p>
+                <p>
+                  When I’m not coding, I love playing ARPG & strategy games and
+                  painting — both of which fuel my creative thinking in tech.
+                </p>
+              </div>
+            
+
             <div className="lui-bgtitle">
               <span> About Me </span>
             </div>

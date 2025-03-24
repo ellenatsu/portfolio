@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 500);
+    }, 200);
   }, []);
 
   return (
@@ -69,8 +69,8 @@ const App = ({ Component, pageProps }) => {
           media="all"
         />
         {/* Favicon */}
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="e-icon.png" type="image/x-icon" />
+        <link rel="icon" href="e-icon.png" type="image/x-icon" />
       </Head>
       {loader && <PreLoader />}
       <Component {...pageProps} />

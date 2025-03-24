@@ -37,32 +37,6 @@ const PortfolioIsotope = ({ noViewMore }) => {
   return (
     <Fragment>
       <div className="works-box">
-        {/* <div
-          className="filter-links scrolla-element-anim-1 scroll-animate"
-          data-animate="active"
-        >
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn("*")}`}
-            onClick={handleFilterKeyChange("*")}
-            data-href=".works-col"
-          >
-            All
-          </a>
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn("nextjs")}`}
-            onClick={handleFilterKeyChange("nextjs")}
-            data-href=".nextjs"
-          >
-            NextJS
-          </a>
-          <a
-            className={`c-pointer lui-subtitle ${activeBtn("react")}`}
-            onClick={handleFilterKeyChange("react")}
-            data-href=".react"
-          >
-            React
-          </a>
-        </div> */}
         <div className="works-items works-masonry-items row">
           {projectsData.map((project, index) => (
             <ProjectCard
@@ -72,22 +46,11 @@ const PortfolioIsotope = ({ noViewMore }) => {
               topicDescription={project.topicDescription}
               categories={project.categories}
               projectLink={project.projectLink}
+              hostedWebsite={project?.hostedWebsite}
             />
           ))}
         </div>
 
-        {/* {!noViewMore && (
-          <div className="load-more-link">
-            <Link legacyBehavior href="/works">
-              <a
-                className="btn scrolla-element-anim-1 scroll-animate"
-                data-animate="active"
-              >
-                <span>View More</span>
-              </a>
-            </Link>
-          </div>
-        )} */}
       </div>
     </Fragment>
   );

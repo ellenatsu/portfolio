@@ -6,6 +6,7 @@ import Link from "next/link";
  * @param {string} topicDescription - A brief description of the topic.
  * @param {string[]} categories - Categories or labels associated with the topic.
  * @param {string} projectLink - URL link to the project.
+ * @param {string} hostedWebsite -- if it's hosted
  */
 
 const ProjectCard = ({
@@ -14,6 +15,7 @@ const ProjectCard = ({
   topicDescription,
   categories,
   projectLink,
+  hostedWebsite,
 }) => {
   const category = categories.join(" ");
   return (
@@ -24,22 +26,14 @@ const ProjectCard = ({
       >
         <div className="image">
           <div className="img">
-            {/* <Link legacyBehavior href="/work-single">
-              <a>
-                <img
-                  decoding="async"
-                  src={topicCover}
-                  alt="cover"
-                />
-                <span className="overlay" />
-              </a>
-            </Link> */}
             <a>
-              <img
-                decoding="async"
-                src={topicCover}
-                alt="cover"
-              />
+              {topicCover !== "" ? (
+                <img decoding="async" src={topicCover} alt="cover" />
+              ) : (
+                <div className="h-32">
+                  No Images, sorry
+                </div>
+              )}
               <span className="overlay" />
             </a>
           </div>
@@ -47,18 +41,24 @@ const ProjectCard = ({
         <div className="desc">
           <span className="category">{category}</span>
           <h5 className="name">
-
             <a>{topicName}</a>
-
           </h5>
           <div className="text">
             <p>{topicDescription}</p>
           </div>
-          <Link legacyBehavior href={projectLink} passHref>
-            <a className="lnk" target="_blank" rel="noopener noreferrer">
-              Go Website
-            </a>
-          </Link>
+          {hostedWebsite ? (
+            <Link legacyBehavior href="/fmw-case">
+              <a className="lnk" rel="noopener noreferrer">
+                Read Case Study
+              </a>
+            </Link>
+          ) : (
+            <Link legacyBehavior href={projectLink} passHref>
+              <a className="lnk" target="_blank" rel="noopener noreferrer">
+                Check
+              </a>
+            </Link>
+          )}
         </div>
         <div
           className="bg-img"

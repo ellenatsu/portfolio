@@ -22,7 +22,7 @@ const Footer = () => {
                 className="copyright-text align-center scrolla-element-anim-1 scroll-animate"
                 data-animate="active"
               >
-                © 2024 <strong>ELLEN WANG</strong>.
+                © 2024 - 2025 <strong>ELLEN WANG</strong>.
               </div>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
