@@ -6,7 +6,7 @@ import Layout from "../src/layouts/Layout";
 const WorkSingle = () => {
   const [videoToggle, setVideoToggle] = useState(false);
   return (
-    <Layout pageClassName={"portfolio-template"}>
+    <Layout pageClassName={"portfolio-template"} className="p-6">
       {/* Section Started Heading */}
       <section className="section section-inner started-heading">
         {/* Heading */}
@@ -226,31 +226,35 @@ const WorkSingle = () => {
 
       {/* Section - Video */}
       <div className="section section-inner m-video-large">
-        <h4>Simple Website Walkthrough Demo (no sound)</h4>
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            paddingBottom: "56.25%", // 16:9 aspect ratio
-            overflow: "hidden",
-          }}
-        >
-          <iframe
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "100%",
-              border: "none",
-            }}
-            src="https://www.youtube.com/embed/FbesD-D68VY?si=c4YKGhEET_96OysX"
-            title="FundmyWish Website Demo"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <div className="container">
+          <div className="row">
+            <h4>Simple Website Walkthrough Demo (no sound)</h4>
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                paddingBottom: "56.25%", // 16:9 aspect ratio
+                overflow: "hidden",
+              }}
+            >
+              <iframe
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: "none",
+                }}
+                src="https://www.youtube.com/embed/FbesD-D68VY?si=c4YKGhEET_96OysX"
+                title="FundmyWish Website Demo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
       {/* Section - Navigation */}

@@ -11,7 +11,7 @@ const PortfolioIsotope = dynamic(
 );
 const Index = () => {
   return (
-    <Layout pageClassName={"home"}>
+    <Layout pageClassName={"home"} className="p-2">
       {/* Section - Hero Started */}
       <section
         className="lui-section lui-section-hero lui-gradient-top"
@@ -402,11 +402,6 @@ const Index = () => {
                   painting — both of which fuel my creative thinking in tech.
                 </p>
               </div>
-            
-
-            <div className="lui-bgtitle">
-              <span> About Me </span>
-            </div>
           </div>
         </div>
       </section>
