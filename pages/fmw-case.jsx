@@ -1,10 +1,8 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useState } from "react";
 import Layout from "../src/layouts/Layout";
 
 const WorkSingle = () => {
-  const [videoToggle, setVideoToggle] = useState(false);
   return (
     <Layout pageClassName={"portfolio-template"}>
       <div className="flex flex-col gap-0 p-6">
@@ -31,7 +29,7 @@ const WorkSingle = () => {
         </div>
         {/* Details */}
         <div className="v-line v-line-right v-line-top">
-          <div className="container">
+          <div className="container ">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                 <div className="m-details">
