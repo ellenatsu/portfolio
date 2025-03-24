@@ -114,8 +114,8 @@ const WorkSingle = () => {
               <p className="text-lg">
                 <strong>Team & Role:</strong>
                 <br />
-                Team of 3: Kenny (Founder), his assistant (Instagram marketing), and me. <br/>
-                I handled{" "}
+                Team of 3: Kenny (Founder), his assistant (Instagram marketing),
+                and me. <br />I handled{" "}
                 <strong>everything technical and product-related</strong>:
                 design, frontend, backend, integrations, SEO, and product
                 direction.
@@ -124,9 +124,10 @@ const WorkSingle = () => {
               <p className="text-lg">
                 <strong>Phase 1 – MVP Development (Oct–Jan):</strong>
                 <br />I designed the core flow: users create wishlists → share →
-                guests donate → users track funds & withdraw. 
+                guests donate → users track funds & withdraw.
               </p>
-              <ul className="list-disc pl-6 text-lg"><strong>Key implementations:</strong>
+              <ul className="list-disc pl-6 text-lg">
+                <strong>Key implementations:</strong>
                 <li>Auth0 login for wishlist creators</li>
                 <li>Create wishlist (list with items)</li>
                 <li>Public wishlist pages for guest donors (no login)</li>
@@ -135,8 +136,8 @@ const WorkSingle = () => {
                 <li>Email receipts for donors</li>
               </ul>
               <p className="text-lg">
-                I also built the <strong>Homepage</strong> and marketing pages like{" "}
-                <strong>About, Blog, FAQ</strong>, with layout based on a
+                I also built the <strong>Homepage</strong> and marketing pages
+                like <strong>About, Blog, FAQ</strong>, with layout based on a
                 reference selected by the founder.
               </p>
               <p className="text-lg">
@@ -150,13 +151,18 @@ const WorkSingle = () => {
                 <strong>
                   Phase 3 – Rebranding & UX Shift (Late Feb–March):
                 </strong>
-                <br />A new branding advisor brought a fresh strategy: more personalized target, compete with traditional wedding registry with cashback gap, Instagram ad funnel, and vendor partnerships.
-                
+                <br />A new branding advisor brought a fresh strategy: more
+                personalized target, compete with traditional wedding registry
+                with cashback gap, Instagram ad funnel, and vendor partnerships.
               </p>
-              <ul className="list-disc pl-6 text-lg"><strong>I redesigned and shipped:</strong>
+              <ul className="list-disc pl-6 text-lg">
+                <strong>I redesigned and shipped:</strong>
                 <li>A new “Wedding Poster” landing page</li>
                 <li>Streamlined signup → wishlist creation flow</li>
-                <li>Template, popular items-based wedding and baby registries creating process</li>
+                <li>
+                  Template, popular items-based wedding and baby registries
+                  creating process
+                </li>
               </ul>
               <p className="text-lg">
                 I sourced and adapted a new HTML homepage template to match the
@@ -177,7 +183,10 @@ const WorkSingle = () => {
                 <br />
                 <span className="block">Auth: Auth0</span>
                 <br />
-                <span className="block">Payments: Paypal, credit card, Google, Apple Pay. (use Stripe & PayPal)</span>
+                <span className="block">
+                  Payments: Paypal, credit card, Google, Apple Pay. (use Stripe
+                  & PayPal)
+                </span>
                 <br />
                 <span className="block">Deployment: Heroku, Vercel</span>
                 <br />
@@ -217,16 +226,31 @@ const WorkSingle = () => {
 
       {/* Section - Video */}
       <div className="section section-inner m-video-large">
-        <div className={`video ${videoToggle ? "active" : ""}`}>
-          <div
-            className="img js-parallax"
-            style={{ backgroundImage: "url(assets/images/blog9.jpg)" }}
-          />
+        <h4>Simple Website Walkthrough Demo (no sound)</h4>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            paddingBottom: "56.25%", // 16:9 aspect ratio
+            overflow: "hidden",
+          }}
+        >
           <iframe
-            className="js-video-iframe"
-            src="https://www.youtube.com/embed/Gu6z6kIukgg?showinfo=0&rel=0&autoplay=0"
-          />
-          <div className="play" onClick={() => setVideoToggle(true)} />
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              border: "none",
+            }}
+            src="https://www.youtube.com/embed/FbesD-D68VY?si=c4YKGhEET_96OysX"
+            title="FundmyWish Website Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       {/* Section - Navigation */}
