@@ -5,7 +5,7 @@ import Layout from "../src/layouts/Layout";
 const WorkSingle = () => {
   return (
     <Layout pageClassName={"portfolio-template"}>
-      <div className="flex flex-col gap-0 p-6">
+      <div style={{ padding: '2rem !important' }}>
       {/* Section Started Heading */}
       <section className="section section-inner started-heading">
         {/* Heading */}
