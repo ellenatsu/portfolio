@@ -376,32 +376,70 @@ const Index = () => {
         </div>
         <div className="lui-contacts v-line v-line-left">
           <div className="container">
-              <div className="liu-text h5">
-                <p>
-                  Hi, I'm Ellen — a full-stack web and app developer with a
-                  background in Android development and a growing focus on
-                  modern web technologies.
-                </p>
-                <p>
-                  Over the past two years, I've built a variety of projects
-                  including an AI-powered web chatbot and ecommerce store demo.
-                </p>
-                <p>
-                  I recently led a 6-month solo developer role at a startup,
-                  designing and building an end-to-end cashback gift registry
-                  platform using React, Node.js, and PostgreSQL.
-                </p>
-                <p>
-                  What drives me is the challenge of problem-solving and the
-                  excitement of building intuitive digital experiences. I enjoy
-                  merging design with functionality and adapting quickly to new
-                  technologies and workflows.
-                </p>
-                <p>
-                  When I’m not coding, I love playing ARPG & strategy games and
-                  painting — both of which fuel my creative thinking in tech.
-                </p>
+            <div className="liu-text h5">
+              <p>
+                Hi, I'm Ellen — a full-stack web and app developer with a
+                background in Android development and a growing focus on modern
+                web technologies.
+              </p>
+              <p>
+                Over the past two years, I've built a variety of projects
+                including an AI-powered web chatbot and ecommerce store demo.
+              </p>
+              <p>
+                I recently led a 6-month solo developer role at a startup,
+                designing and building an end-to-end cashback gift registry
+                platform using React, Node.js, and PostgreSQL.
+              </p>
+              <p>
+                What drives me is the challenge of problem-solving and the
+                excitement of building intuitive digital experiences. I enjoy
+                merging design with functionality and adapting quickly to new
+                technologies and workflows.
+              </p>
+              <p>
+                When I’m not coding, I love playing ARPG & strategy games and
+                painting — both of which fuel my creative thinking in tech. I just started to try Dev notes to record my progrss and learning, I added it below.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section - dev notes */}
+      <section className="lui-section lui-gradient-center" id="skills-section">
+        {/* Heading */}
+        <div className="lui-heading">
+          <div className="container">
+            <div className="m-titles align-center">
+              <h2
+                className="m-title splitting-text-anim-1 scroll-animate"
+                data-splitting="words"
+                data-animate="active"
+              >
+                <span> Dev & Study Notes </span>
+              </h2>
+              <div
+                className="m-subtitle splitting-text-anim-1 scroll-animate"
+                data-splitting="words"
+                data-animate="active"
+              >
+                <span>What I've been working and studying</span>
               </div>
+            </div>
+            <div className="lui-contacts v-line v-line-left">
+              <div className="container">
+                <iframe
+                  src="https://forest-hibiscus-ab4.notion.site/ebd/1c2c0835633680f8a2efeb3cfeed7e1d"
+                  width="100%"
+                  height="400"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
