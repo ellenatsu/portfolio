@@ -43,14 +43,14 @@ const Index = () => {
                   </h1>
                   <div className="label lui-subtitle">
                     {" "}
-                    I am <strong>Web Developer</strong>
+                    I am <strong>a developer </strong> who enjoys building things that actually work.
                   </div>
                 </div>
                 <div className="description">
                   <div>
                     <p>
-                      From Vancouver, Canada. I have rich experience in Full
-                      Stack Web Development and Mobile App Development.
+                    
+                    I’ve worked on early-stage projects where I handled everything from frontend UI to backend APIs. I care about clean UX, clear logic, and getting things shipped.
                     </p>
                   </div>
                   <div className="social-links">

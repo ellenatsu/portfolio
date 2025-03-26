@@ -22,7 +22,7 @@ export const projectsData = [
   {
     topicName: "Discord Clone",
     topicCover:"assets/covers/discord.png",
-    topicDescription: "Test account: user: test@example.com, password: test  Click to join a test server! ",
+    topicDescription: "A clone of discord demo built by NextJS",
     categories: ["React", "Nextjs", "MySQL"],
     projectLink: "https://github.com/ellenatsu/discord_clone",
   },
@@ -30,7 +30,7 @@ export const projectsData = [
     topicName: "Ecommerce Store ",
     topicCover:"assets/covers/ECOM-store.png",
     topicDescription:
-      "Front store demo for the test account.",
+      "Front store demo ecommerce built by NextJS.",
     categories: ["Nextjs", "MySQL"],
     projectLink: "https://github.com/ellenatsu/ecom_store_demo",
   },
